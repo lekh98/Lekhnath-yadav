@@ -1,18 +1,15 @@
-const hamburger = document.querySelector('#hamburger')
+
 const sideMenus = document.querySelector('#sideMenus');
 const navBar = document.querySelector("nav");
 const navLinks = document.querySelector("nav ul");
-const navClose =document.querySelector("#nav-close")
 
-navLinks.addEventListener("click",()=>{
-  sideMenus.classList.add("hidden")
-})
-navClose.addEventListener("click",()=>{
-  sideMenus.classList.add("hidden")
-})
-hamburger.addEventListener("click",()=>{
-  sideMenus.classList.remove("hidden")
-})
+
+function openMenu(){
+  sideMenus.style.transform = 'translateX(-16rem)'
+}
+function closeMenu(){
+  sideMenus.style.transform = 'translateX(16rem)'
+}
 
 window.addEventListener('scroll',()=>{
   if(scrollY > 50){
