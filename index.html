@@ -48,7 +48,7 @@
             <img src="./images/arrow-icon-dark.png" alt="" class="w-3 hidden dark:block">
         </a>
 
-        <button id="hamburger" class="block md:hidden ml-3" >
+        <button class="block md:hidden ml-3" onclick="openMenu ()" >
             <img src="./images/menu-black.png" alt="" class="w-6 dark:hidden">
             <img src="./images/menu-white.png" alt="" class="w-6 hidden dark:block">
         </button>
@@ -61,7 +61,7 @@
          -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 font-Ovo
          dark:bg-darkHover dark:text-white">
 
-         <div id="nav-close" class="absolute right-6 top-6" >
+         <div id="nav-close" class="absolute right-6 top-6" onclick="closeMenu() >
             <img src="./images/close-black.png" alt="" 
 
             class="w-5 cursor-pointer dark:hidden">
@@ -70,11 +70,11 @@
             class="w-5 cursor-pointer hidden dark:block">
 
         </div>
-            <li><a href="#top" >Home</a></li>
-            <li><a href="#about" >About Me</a></li>
-            <li><a href="#services" >Services</a></li>
-            <li><a href="#work" >My Work</a></li>
-            <li><a href="#contact" >Contact Me</a></li>
+            <li><a href="#top" onclick="closeMenu()>Home</a></li>
+            <li><a href="#about" onclick="closeMenu()>About Me</a></li>
+            <li><a href="#services" onclick="closeMenu()>Services</a></li>
+            <li><a href="#work" onclick="closeMenu()>My Work</a></li>
+            <li><a href="#contact" onclick="closeMenu()>Contact Me</a></li>
         </ul>
         
     </nav>
